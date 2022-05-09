@@ -454,10 +454,10 @@
                             <ul class="navbar-nav ms-auto">
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
+                            <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
                             <a href="{{ route('events') }}" class="nav-item nav-link">Events</a>
                             <a href="{{ route('tiket') }}" class="nav-item nav-link">Ticket</a>
-                            <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
+                            <a href="{{ route('team') }}" class="nav-item nav-link active">Team</a>
                         </div>
                                 @auth
                                 <li class="nav-item dropdown">
