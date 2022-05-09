@@ -67,4 +67,4 @@ Route::get('/forgot',[RegistrasiController::class,'forgot'])->name('forgot');
 Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/tiket',[IndexController::class,'ticket'])->name('tiket');
 Route::get('/events',[IndexController::class,'events'])->name('events');
-Route::get('/contact',[IndexController::class,'team'])->name('team');
+Route::get('/team',[IndexController::class,'team'])->name('team');
