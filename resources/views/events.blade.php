@@ -60,21 +60,16 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <!-- <div class="navbar-nav mr-auto py-0">
-                        <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
-                            <a href="{{ route('events') }}" class="nav-item nav-link">Events</a>
-                            <a href="{{ route('tiket') }}" class="nav-item nav-link">Ticket</a>
-                            <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
-                        </div> -->
-                        <div class="navbar-nav ml-auto py-0">
-                            <ul class="navbar-nav ms-auto">
-                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                         <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
                             <a href="{{ route('events') }}" class="nav-item nav-link">Events</a>
                             <a href="{{ route('tiket') }}" class="nav-item nav-link">Ticket</a>
                             <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
                         </div>
+                        <div class="navbar-nav ml-auto py-0">
+                            <ul class="navbar-nav ms-auto">
+                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      
                                 @auth
                                 <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -120,7 +115,7 @@
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
             <img src="{{asset('img/depsenbud.png')}}" width="110px" height="90px">
-              <h5>Departemen Seni dan Budaya</h5>
+              <h5>Departemen Seni dan </h5>
             </div>
           </div>
         </section>
