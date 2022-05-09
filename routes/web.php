@@ -6,13 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RegistrasiController;
 use App\Http\Controllers\BerandaController;
-use App\Http\Controllers\SejarahController;
-use App\Http\Controllers\ObatIkanController;
 use App\Http\Controllers\IndexController;
-use App\Http\Controllers\ShopController;
-use App\Http\Controllers\DetailController;
-use App\Http\Controllers\CartController;
-use App\Http\Controllers\ChekoutController;
 use App\Http\Controllers\ContacController;
 use App\Http\Controllers\UserController;
 
@@ -44,13 +38,6 @@ use App\Http\Controllers\UserController;
 //     return view('registrasi', ["title"=>"Registrasi"]);
 // });
 
-// Route::get('/forgot', function () {
-//     return view('forgot');
-// });
-
-// Route::get('/serjarah', function () {
-//     return view('forgot');
-// });
 
 // Route::get('/registrasi',[LoginController::class,'registrasi'])->name('registrasi');
 
@@ -58,10 +45,7 @@ Route::get('/login',[LoginController::class,'index'])->name('login')->middleware
 Route::post('/postlogin',[LoginController::class,'postlogin'])->name('postlogin');
 
 Route::post('/logout',[LogoutController::class,'logout'])->name('logout');
-// // Route::get('/registrasi',[LoginController::class,'registrasi'])->name('registrasi');
-// Route::get('/logout',[LoginController::class,'logout'])->name('logout');
 
-// // Route::group(['middleware' => ['auth','ceklevel:admin,karyawan']], function () {
     
 // // });
 // route::get('/home',[HomeController::class,'index']) -> name('home');
@@ -78,24 +62,9 @@ Route::get('/forgot',[RegistrasiController::class,'forgot'])->name('forgot');
 
 // Route::get('/',[BerandaController::class,'beranda'])->name('beranda')->middleware('auth');
 
-// Route::get('/home',[HomeController::class,'home'])->name('home');
-Route::get('/home',[HomeController::class,'home'])->name('home')->middleware('auth');;
 
-
-Route::get('/sejarah',[SejarahController::class,'sejarah'])->name('sejarah');
-
-Route::get('/obatikan',[ObatIkanController::class,'obatikan'])->name('obatikan');
 
 Route::get('/',[IndexController::class,'index'])->name('index');
-
-Route::get('/shop',[ShopController::class,'shop'])->name('shop');
-
-Route::get('/detail',[DetailController::class,'detail'])->name('detail');
-
-
-Route::get('/cart',[CartController::class,'cart'])->name('cart');
-
-
-Route::get('/chekout',[ChekoutController::class,'chekout'])->name('chekout');
-
-Route::get('/contac',[ContacController::class,'contac'])->name('contac');
+Route::get('/tiket',[IndexController::class,'ticket'])->name('tiket');
+Route::get('/events',[IndexController::class,'events'])->name('events');
+Route::get('/contact',[IndexController::class,'team'])->name('team');
