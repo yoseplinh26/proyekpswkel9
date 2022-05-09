@@ -13,4 +13,26 @@ class IndexController extends Controller
             // 'active' => 'index'
         ]);
     }
+
+    public function ticket()
+    {
+        return view('tiket', [
+            'title' => 'Ticket',
+            // 'active' => 'index'
+        ]);
+    }
+    public function events()
+    {
+        return view('events', [
+            'title' => 'Events',
+            // 'active' => 'index'
+        ]);
+    }
+    public function team()
+    {
+        return view('team', [
+            'title' => 'Team',
+            // 'active' => 'index'
+        ]);
+    }
 }
