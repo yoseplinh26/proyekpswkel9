@@ -113,18 +113,18 @@
   <main id="main">
 
     <!-- ======= Why Us Section ======= -->
-    <!-- <section id="why-us" class="why-us">
+    <section id="why-us" class="why-us">
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-7 d-flex align-items-stretch">
+          <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
             <img src="{{asset('img/depsenbud.png')}}" width="110px" height="90px">
               <h5>Departemen Seni dan Budaya</h5>
             </div>
           </div>
         </section>
-        </main> -->
+        </main>
 
 
     <!-- ======= Departments Section ======= -->
@@ -132,6 +132,7 @@
       <div class="container">
 
         <div class="section-title">
+      
           <h3>Apa yah<br>Tujuan diadakannya event BEM?</h3>
           <p>Tujuan dari diadakannya event BEM ini yaitu untuk menjalin hubungan sesama mahasiswa di 
             kampus IT DEL. Dengan landasan yang selalu diterpkan yaitu <bold>MarTuhan, marRoha, dan marBisuk</bold> menjadikan penting nya bagi mahasiswa
