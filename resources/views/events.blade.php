@@ -115,7 +115,7 @@
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
             <img src="{{asset('img/depsenbud.png')}}" width="110px" height="90px">
-              <h5>Departemen Seni dan </h5>
+              <h5>Departemen Seni  </h5>
             </div>
           </div>
         </section>
