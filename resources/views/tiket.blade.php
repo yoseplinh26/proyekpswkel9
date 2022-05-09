@@ -108,7 +108,7 @@
             </div>
 
         <ul class="portfolio-meta bottommargin">
-            <li><span><i class="icon-user"></i>Tema:</span> Menjalin Keakraban sesama Mahasiswa IT Del</li>
+            <li><span><i class="icon-user"></i>Tema:</span> LLALLALALALLALALALA</li>
             <li><span><i class="icon-calendar3"></i>Lokasi</span> Kafetaria</li>
             <li><span><i class="icon-lightbulb"></i>Tanggal Pelaksanaa:</span> 29 Mei 2022</li>
             <li><span><i class="icon-link"></i>Jumlah Kuota:</span>150 orang</li>
