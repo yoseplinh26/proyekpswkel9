@@ -505,7 +505,7 @@
             <img src="team/Amanda-removebg-preview.png" class="img-fluid">
           </div>
           <div class="details">
-            <h4 class="text-center">Amanda Regina Simbolon</h4>
+            <h4 class="text-center">Amanda Artha Regina Simbolon</h4>
             <h6 class="text-center">11321055 </h6>
             <p class="text-center">D3 Teknologi Informasi</p>
           </div>
