@@ -114,8 +114,8 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
-            <img src="{{asset('img/depsenbud.png')}}" width="110px" height="90px">
-              <h5>Departemen Seni  </h5>
+            <img src="{{asset('img/depsenbud.jpg')}}" width="110px" height="90px">
+              <h5>Departemen Seni dan Budaya </h5>
             </div>
           </div>
         </section>
