@@ -29,6 +29,7 @@
     <script src="{{  asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js') }} " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <style>
+     
     .our-team {
         padding: 50px 0px;
         background-color: #f9f9f9;
@@ -370,20 +371,13 @@
 /*--------------------------------------------------------------
 #
 --------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  margin-bottom: -200px;
-  background-color: #3297BB;
-  
-}
+
 #hero .container {
   position: relative;
   
 }
-#hero h2 {
-  color: #dee1e5;
+h2 {
+  color: #fff;
   margin: 10px 0 0 0;
   font-size: 35px;
   font-family: Monotype Corsiva;
@@ -401,7 +395,7 @@
     height: 50vh;
   }
   #hero .container {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   #hero h1 {
     font-size: 28px;
@@ -413,11 +407,10 @@
     margin-bottom: 30px;
   }
 }
-@media (max-height: 100px) {
-  #hero {
-    height: 110vh;
-  }
+.team{
+    background: #3297BB;
 }
+  
 
 
     </style>
@@ -483,15 +476,15 @@
                     </div>
                 </nav>
                 <!-- ======= Hero Section ======= -->
-                <br>
-                <br>
-                <br> 
-            
+           <div class="team">
+        
+                <center> <img src="{{asset('img/teamm.png')}}" width="350px" height="250px"></center>
+    <h2>Let's get closer to the Berkisa's Team</h2>
+     <div>
+                <div class="container">
                 <section id="hero" class="d-flex align-items-center">
-    <div class="container">
-     <center> <img src="{{asset('img/team.jpg')}}" alt="" class="img-fluid" width="350px" height="250px"></center>
-      <h2>Let's get closer to the Berkisa's Team</h2>
-      
+               
+</div>
   </section><!-- End Hero -->
   <main id="main">
 <body>
@@ -506,7 +499,7 @@
         
           </div>
           <div class="details">
-            <h4 class="text-center">Amanda Artha Regina Simbolon</h4>
+            <h4 class="text-center">Amanda Simbolon</h4>
             <h6 class="text-center">11321055 </h6>
             <p class="text-center">D3 Teknologi Informasi</p>
           </div>

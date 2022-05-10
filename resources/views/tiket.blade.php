@@ -153,6 +153,115 @@
 .deskripsi ol{
   font-size: 30px;
 }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* { box-sizing: border-box; }
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+/* STRUCTURE */
+
+.wrapper {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 20px auto;
+}
+header {
+	padding: 0 15px;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+.kolom {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+    
+}
+
+.column {
+	flex: 1;
+	
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
+}
+.box {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.box {
+	flex: 1;
+
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
+}
+
+@media screen and (max-width: 980px) {
+  .kolom .box {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.kolom .box {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+.column button{
+    background: #1297BD;
+    border: 3px solid gray;
+}
+h3{
+    font-family: Monotype Corsiva;
+}
 </style>
 </head>
 
@@ -225,111 +334,45 @@
 
 <!-- Content ============================================= -->
 <!-- Portfolio Items============================================= -->
-<div id="portfolio" class="portfolio grid-container clearfix">
-                                <article class="portfolio-item pf-media pf-buah-buahan" id="productList">
-                <div class="row mt-4">
-                    <div class="col-md-12">
-                        <div class="feature-box media-box">
-                            <div class="fbox-media">
-                                <div class="portfolio-image">
-                                     <img src="https://suplaitani.rickaru.com/images/products/Screenshot 2021-09-16 151629.png" style="width:100%;height:250px;transition: 100ms;position: relative;border: 2px solid;" class="card-img-top img-thumbnail">                              
-                                <div class="portfolio-overlay">
-                                    <a href="https://suplaitani.rickaru.com/show/5" class="center-icon"><i class="icon-line-expand"></i></a><br>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="fbox-desc">
-                                <h3>Music Corner<br></h3><br>
-                                <form action="https://suplaitani.rickaru.com/cart/5/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
-                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">                                    <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
-                                    <button class="btn btn-success float-right">+ Pesan Tiket</button>
-                                </form>		
-                            </div>
-                         </div>
-                    </div>
-                </div>
-                </article>
-                                <article class="portfolio-item pf-media pf-buah-buahan" id="productList">
-                <div class="row mt-4">
-                    <div class="col-md-12">
-                        <div class="feature-box media-box">
-                            <div class="fbox-media">
-                                <div class="portfolio-image">
-                                     <img src="https://suplaitani.rickaru.com/images/products/Melon.jpg" style="width:100%;height:250px;transition: 100ms;position: relative;border: 2px solid;" class="card-img-top img-thumbnail">                              
-                                <div class="portfolio-overlay">
-                                    <a href="https://suplaitani.rickaru.com/show/4" class="center-icon"><i class="icon-line-expand"></i></a><br>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="fbox-desc">
-                                <h3>Kopi Sore<br></h3><br>
-                                <form action="https://suplaitani.rickaru.com/cart/4/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
-                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">                                    <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
-                                    <button class="btn btn-success float-right">+ Pesan Tiket</button>
-                                </form>		
-                            </div>
-                         </div>
-                    </div>
-                </div>
-                </article>
-                                <article class="portfolio-item pf-media pf-sayur-sayuran" id="productList">
-                <div class="row mt-4">
-                    <div class="col-md-12">
-                        <div class="feature-box media-box">
-                            <div class="fbox-media">
-                                <div class="portfolio-image">
-                                     <img src="https://suplaitani.rickaru.com/images/products/60956cf099781.jpg" style="width:100%;height:250px;transition: 100ms;position: relative;border: 2px solid;" class="card-img-top img-thumbnail">                              
-                                <div class="portfolio-overlay">
-                                    <a href="https://suplaitani.rickaru.com/show/2" class="center-icon"><i class="icon-line-expand"></i></a><br>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="fbox-desc">
-                                <h3>Festival Budaya<br></h3><br>
-                                <form action="https://suplaitani.rickaru.com/cart/2/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
-                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">                                    <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
-                                    <button class="btn btn-success float-right">+ Pesan Tiket</button>
-                                </form>		
-                            </div>
-                         </div>
-                    </div>
-                </div>
-                </article>
-                                <article class="portfolio-item pf-media pf-sayur-sayuran" id="productList">
-                <div class="row mt-4">
-                    <div class="col-md-12">
-                        <div class="feature-box media-box">
-                            <div class="fbox-media">
-                                <div class="portfolio-image">
-                                     <img src="https://suplaitani.rickaru.com/images/products/60956c181491a.jpg" style="width:100%;height:250px;transition: 100ms;position: relative;border: 2px solid;" class="card-img-top img-thumbnail">                              
-                                <div class="portfolio-overlay">
-                                    <a href="https://suplaitani.rickaru.com/show/1" class="center-icon"><i class="icon-line-expand"></i></a><br>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="fbox-desc">
-                                <h3>Pentas Budaya<br></h3><br>
-                                <form action="https://suplaitani.rickaru.com/cart/1/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
-                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">     <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
-                                    <button class="btn btn-success float-right">+ Pesan Tiket</button>
-                                </form>		
-                                </div>
-                            <div class="fbox-desc">
-                                <h3>Podcast<br></h3><br>
-                                <form action="https://suplaitani.rickaru.com/cart/1/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
-                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">  <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
-                                    <button class="btn btn-success float-right">+ Pesan Tiket</button>
-                                </form>		
-                                </div>
-                         </div>
-                    </div>
-                </div>
-                </article>
-                            </div><!-- #portfolio end -->
-            <div class="clear bottommargin-sm"></div>
+<section class="columns">
+	
+	<div class="column">
+    <img src="{{asset('img/MUSIC CORNER.jpeg')}}" width="300px" height="350px">
+		<h3>Music Corner</h3>
 
-            <div class="clear"></div>
-            
-        </div>
-
+              <center><button>Pesan Tiket</button></center>		
+		</div>
+	
+	<div class="column">
+    <img src="{{asset('img/KOPI SORE.png')}}" width="300px" height="350px">
+		<h3>Kopi Sore</h3>
+        <center> <button>Pesan Tiket</button>	</center>
+		</div>
+  
+  <div class="column">
+  <img src="{{asset('img/fesbud.jpeg')}}" width="300px" height="350px">
+		<h3>Festival Budaya</h3>
+        <center><button>Pesan Tiket</button></center>
     </div>
+</section>
+
+<br />
+<div class="wrapper">
+<section class="kolom" >
+<div class="column">
+    <img src="{{asset('img/pentas.jpeg')}}" width="300px" height="350px">
+		<h3>Pentas Budaya</h3>
+
+              <center><button>Pesan Tiket</button></center>		
+		</div>
+    <div class="column">
+    <img src="{{asset('img/pentas.jpeg')}}" width="300px" height="350px">
+		<h3>Podcast</h3>
+
+              <center><button>Pesan Tiket</button></center>		
+		</div>
+ 
+	
+
+
+</div>
