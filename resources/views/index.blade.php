@@ -22,13 +22,14 @@
     <link href="{{  asset('css/carousel.css') }}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{  asset('css/index.css') }}" rel="stylesheet">
-
+    <link href="{{  asset('css/style.css') }}" rel="stylesheet">
+    <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
     {{-- nav-login --}}
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> --}}
     <script src="{{  asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js') }} " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
-      .navbar {
+  .navbar {
   padding: 0;
 }
 .navbar ul {
@@ -63,7 +64,7 @@
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #1977cc;
+  color: blue;
   border-color: #1977cc;
 }
 .navbar .dropdown ul {
@@ -77,7 +78,7 @@
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+ 
   transition: 0.3s;
 }
 .navbar .dropdown ul li {
@@ -120,40 +121,40 @@
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
+  
 }
 </style>
 </head>
 
 <body>
-      <!-- Topbar Start -->
-    <div class="container-fluid">
-        <div class="row align-items-center py-3 px-xl-5">
-            <div class="col-lg-3 d-none d-lg-block">  
 
-            </div>
-    <!-- Topbar End -->
     
     <!-- Navbar Start -->
     <div class="container-fluid mb-5">
         <div class="row border-top px-xl-5">
+
             <div class="col-lg-3 d-none d-lg-block">
+            
             <img src="{{asset('img/7.png')}}">
             </div>
+            
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                     <a href="" class="text-decoration-none d-block d-lg-none">
                         <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">Events BEM</span></h1>
                     </a>
+                    
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-              
+                    
                         </div>
                         <div class="navbar-nav ml-auto py-5">
                             <ul class="navbar-nav ms-auto">
-                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            
                         <div class="navbar-nav mr-auto py-0">
                             <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
                             <a href="{{ route('events') }}" class="nav-item nav-link">Events</a>
@@ -181,47 +182,31 @@
                                 @endauth
                               </ul>                      
                         </div>
+</nav>
                     </div>
-                </nav>
+</div>
+              
                 <!-- ======= Hero Section ======= -->
                 <br>
                 <br>
                 <br>            
-<section id="hero">
-<div class="col-lg-5">
-      <h1>Welcome to Website<br>Event BEM Online Ticketing</h1>
-      <h2>Come and Join Us</h2>
-     
-    </div>
-  </section>
+
   <br>
-  <!-- End Hero -->
-  <main id="main">
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="content">
-              <h3>Apa ajasih event yang ada di BEM?</h3>
-              <p>
-               Event yang diselenggarakan oleh BEM merupakan event yang menarik untuk menjalin hubungan sesama mahasiswa di IT DEL
-              </p>
-              <div class="text-center">
-              </div>
-            </div>
-          </div>
-        </section>
-        </main>
+  <div class="jumbotron">
+  <h1>Welcome to Website <br> Event BEM Online Ticketing</h1> 
+            <h2>Come and Join Us</h2>
+        <img src="{{asset('img/5.png')}}" width="1550px" height="850px" float="center">
+        <img src="{{asset('img/8.png')}}" width="550px" height="550px">
+      </div>
+    </div>
+  
     <!-- Featured End -->
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" style="height: 410px;">
                             <img class="img-fluid" src="#" alt="Image">
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <div class="p-3" style="max-width: 700px;">
+                                <div class="p-3" style="max-width: 100px;">
                                    
                                 </div>
                             </div>
@@ -250,7 +235,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div
+    
     <div class="container-fluid pt-5">
         <div class="row px-xl-1 pb-3">
             <div class="col-lg-2 col-md-6 col-sm-6 pb-1">
@@ -285,23 +271,3 @@
             </div>
         </div>
     </div>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('js/easing.js') }}"></script>
-    <script src="{{ asset('js/carousel.js') }}"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="{{ asset('js/validation.js') }}"></script>
-    <script src="{{ asset('js/contac.js') }}"></script>
-
-    <!-- Template Javascript -->
-    <script src="{{ asset('js/main.js') }}"></script>
-</body>
-
-</html>

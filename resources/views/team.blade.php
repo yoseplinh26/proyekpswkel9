@@ -476,6 +476,8 @@ h2 {
                     </div>
                 </nav>
                 <!-- ======= Hero Section ======= -->
+</div>
+</div>
            <div class="team">
         
                 <center> <img src="{{asset('img/teamm.png')}}" width="350px" height="250px"></center>
