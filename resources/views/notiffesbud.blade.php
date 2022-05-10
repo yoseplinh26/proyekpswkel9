@@ -220,4 +220,25 @@
                 <br>
                  <br>
                 <!-- ======= Hero Section ======= -->
-                
+  <!-- Content ============================================= -->
+<section id="content">
+
+<div>
+        <img src="{{asset('img/fesbud.jpeg')}}" width="520px" height="670px">
+</div>
+<br>
+<div class="deskripsi">
+            <h2><b>Festival Budaya</b></h2>
+            <hr>
+    <ul class="portfolio-meta bottommargin">
+        <ol><span><i class="icon-user"></i>Tema:</span> Menjalin keutuhan sesama mahasiswa IT Del</ol>
+        <ol><span><i class="icon-calendar3"></i>Lokasi</span> Kafetaria</ol>
+        <ol><span><i class="icon-lightbulb"></i>Tanggal Pelaksanaa:</span> 29 Mei 2022</ol>
+        <ol><span><i class="icon-link"></i>Jumlah Kuota:</span>150 orang</ol>
+        <ol><span><i class="icon-link"></i>Jumlah Pemesanan:</span></ol>
+        <ol><span><i class="icon-link"></i>Deskripsi:</span>Event ini diselenggarakan oleh BEM untuk mempererat hubungan antar mahasiswa</ol>
+    </ul>
+    </div>
+        </div>
+</div>
+</section>
