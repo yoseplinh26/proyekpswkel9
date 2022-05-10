@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +22,7 @@
     <link href="{{  asset('css/carousel.css') }}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{  asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{  asset('css/index.css') }}" rel="stylesheet">
 
     {{-- nav-login --}}
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> --}}
@@ -68,8 +67,7 @@
                         </div>
                         <div class="navbar-nav ml-auto py-0">
                             <ul class="navbar-nav ms-auto">
-                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-      
+
                                 @auth
                                 <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -114,8 +112,8 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
-            <img src="{{asset('img/depsenbud.jpg')}}" width="110px" height="90px">
-              <h5>Departemen Seni dan Budaya </h5>
+            <img src="{{asset('img/depsenbud.png')}}" width="110px" height="90px">
+              <h5>Departemen Seni dan Budaya</h5>
             </div>
           </div>
         </section>
@@ -127,7 +125,7 @@
       <div class="container">
 
         <div class="section-title">
-      
+        <img src="{{asset('img/logo.jpeg')}}">
           <h3>Apa yah<br>Tujuan diadakannya event BEM?</h3>
           <p>Tujuan dari diadakannya event BEM ini yaitu untuk menjalin hubungan sesama mahasiswa di 
             kampus IT DEL. Dengan landasan yang selalu diterpkan yaitu <bold>MarTuhan, marRoha, dan marBisuk</bold> menjadikan penting nya bagi mahasiswa
