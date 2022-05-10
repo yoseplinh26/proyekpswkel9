@@ -171,9 +171,11 @@
     <div class="container-fluid mb-5">
         <div class="row border-top px-xl-5">
             <div class="col-lg-3 d-none d-lg-block">
-                 <img src="{{asset('img/7.png')}}">
+                
+            <img src="{{asset('img/7.png')}}">
             </div>
             <div class="col-lg-9">
+                
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                     <a href="" class="text-decoration-none d-block d-lg-none">
                         <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">Events BEM</span></h1>
@@ -237,10 +239,10 @@
                                 </div>
                             </div>
                             <div class="fbox-desc">
-                                <h3><a href="https://suplaitani.rickaru.com/show/5">apel</a><br><b> Rp 1,000.00/Kilogram </b></h3><br>
+                                <h3>Music Corner<br></h3><br>
                                 <form action="https://suplaitani.rickaru.com/cart/5/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
                                     <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">                                    <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
-                                    <button class="btn btn-success float-right">+ Keranjang</button>
+                                    <button class="btn btn-success float-right">+ Pesan Tiket</button>
                                 </form>		
                             </div>
                          </div>
@@ -260,10 +262,10 @@
                                 </div>
                             </div>
                             <div class="fbox-desc">
-                                <h3><a href="https://suplaitani.rickaru.com/show/4">melon</a><br><b> Rp 10,000.00/Kilogram </b></h3><br>
+                                <h3>Kopi Sore<br></h3><br>
                                 <form action="https://suplaitani.rickaru.com/cart/4/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
                                     <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">                                    <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
-                                    <button class="btn btn-success float-right">+ Keranjang</button>
+                                    <button class="btn btn-success float-right">+ Pesan Tiket</button>
                                 </form>		
                             </div>
                          </div>
@@ -283,10 +285,10 @@
                                 </div>
                             </div>
                             <div class="fbox-desc">
-                                <h3><a href="https://suplaitani.rickaru.com/show/2">Tomat</a><br><b> Rp 10,000.00/Kilogram </b></h3><br>
+                                <h3>Festival Budaya<br></h3><br>
                                 <form action="https://suplaitani.rickaru.com/cart/2/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
                                     <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">                                    <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
-                                    <button class="btn btn-success float-right">+ Keranjang</button>
+                                    <button class="btn btn-success float-right">+ Pesan Tiket</button>
                                 </form>		
                             </div>
                          </div>
@@ -306,12 +308,19 @@
                                 </div>
                             </div>
                             <div class="fbox-desc">
-                                <h3><a href="https://suplaitani.rickaru.com/show/1">Sawi</a><br><b> Rp 50,000.00/Kilogram </b></h3><br>
+                                <h3>Pentas Budaya<br></h3><br>
                                 <form action="https://suplaitani.rickaru.com/cart/1/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
-                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">                                    <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
-                                    <button class="btn btn-success float-right">+ Keranjang</button>
+                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">     <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
+                                    <button class="btn btn-success float-right">+ Pesan Tiket</button>
                                 </form>		
-                            </div>
+                                </div>
+                            <div class="fbox-desc">
+                                <h3>Podcast<br></h3><br>
+                                <form action="https://suplaitani.rickaru.com/cart/1/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">  <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
+                                    <button class="btn btn-success float-right">+ Pesan Tiket</button>
+                                </form>		
+                                </div>
                          </div>
                     </div>
                 </div>

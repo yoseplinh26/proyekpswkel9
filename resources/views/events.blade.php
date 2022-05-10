@@ -307,11 +307,15 @@
                 <div class="row gy-4">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Podcast</h3>
-                    <p class="fst-italic">Festival Kopi Sore merupakan salah satu kegiatan mahasiswa IT DEL yang dilakukan di lingkungan kampus IT DEl</p>
-                    <p>Pada kegiatan Kopi Sore ini mahasiswa-mahasiswi IT DEL berkumpul bersama pada sore hari di tempat yang ditentukan
-                      untuk bersantai dan menikmati secangkir kopi gratis yang sudah disediakan. Bukan hanya menikmati kopi fratis, mahasiswa-mahasiswi yang bergabung memanfaatkan waktu yang ada untuk berbincang ria dan melepas penat dari lelahnya kegiatan perkuliahan. Kegiatan ini juga menyediakan sebuah panggung kecil untuk orang yang bersedia menyumbangkan bakat nya dengan bernyanyi untuk menghidupkan suasana sore hari.
-                    </p>
-                    <p>Event Kopi Sore ini sangat bermanfaat di kalangan mahasiswa-mahasiswi selain sebagai wadah untuk refreshing, dapat juga menumbuhkan keakraban antar sesama</p>
+                    <p class="fst-italic">Podcast merupakan salah satu event yang dilaksanakan oleh BEM. Kegiatan podcast ini sangat 
+                      sering dilaksanakan pada saat perkuliahan dilakukan secara during.</p>
+                      <p>Podcast ini dilakukan oleh anggota panitia 
+                      depsendub yang biasanya event ini akan membahas mengenai depertemen seni dan budaya BEM yang ada di Institut Teknologi DEL. 
+                      Kegiatan podcast ini dilakukan secara during melalui zoom meeting. Setelah panitia BEM melakukan podcast melaui zoom, 
+                      selanjutnya panitia akan mengabadikan video podcast tersebut ke youtube agar setiap mahasiswa yang lain juga dapat
+                       mengakses podcast tersebut. </p>
+                    <p>Tujuan diadakan nya podcast ini adalah untuk tetap menjalin hubungan yang erat antar 
+                       mahasiswa dimana pun baik secara offline maupun online. Video podcast ini dapat diakses melalui akun resmi depsendub it del</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="{{asset('img/podcast.jpeg')}}" alt="" class="img-fluid">
