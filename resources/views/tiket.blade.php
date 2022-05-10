@@ -113,6 +113,30 @@
   left: 100%;
   visibility: visible;
 }
+.details {
+        padding: 10px 0px;
+    }
+    .details h4 {
+        color: #607D8B;
+    }
+    .details h6 {
+        color: #9E9E9E;
+    }
+    .details p {
+        color: #777777;
+        line-height: 20px;
+        padding-top: 7px;
+    }
+    .details a {
+        margin: 0 auto;
+        font-size: 16px;
+        color: #607D8B;
+        text-decoration: none;
+        font-weight: 500;
+        display: table;
+        margin-top: 20px;
+    }
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -196,7 +220,7 @@
 		</div>
 
 		<div class="col_one_third portfolio-single-content col_last nobottommargin">
-\
+
 
             <div class="fancy-title title-bottom-border">
                 <h2>Kopi Sore</h2>

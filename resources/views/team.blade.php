@@ -489,7 +489,7 @@
             
                 <section id="hero" class="d-flex align-items-center">
     <div class="container">
-     <center> <img src="team/teamm.png" alt="" class="img-fluid" width="350px" height="250px"></center>
+     <center> <img src="{{asset('img/team.jpg')}}" alt="" class="img-fluid" width="350px" height="250px"></center>
       <h2>Let's get closer to the Berkisa's Team</h2>
       
   </section><!-- End Hero -->
@@ -502,7 +502,8 @@
       <div class="col-sm-6 col-lg-4">
         <div class="box-bg">
           <div class="client-img">
-            <img src="team/Amanda-removebg-preview.png" class="img-fluid">
+          <img src="{{asset('img/Amanda-removebg-preview.png')}}"class="img-fluid">
+        
           </div>
           <div class="details">
             <h4 class="text-center">Amanda Artha Regina Simbolon</h4>
@@ -525,7 +526,7 @@
       <div class="col-sm-6 col-lg-4">
         <div class="box-bg">
           <div class="client-img">
-            <img src="team/Ester-removebg-preview.png" class="img-fluid">
+          <img src="{{asset('img/Ester-removebg-preview.png')}}"class="img-fluid">
           </div>
           <div class="details">
             <h4 class="text-center">Ester Sinaga</h4>
@@ -549,7 +550,7 @@
       <div class="col-sm-6 col-lg-4">
         <div class="box-bg">
           <div class="client-img">
-            <img src="team/Albert-removebg-preview.png" class="img-fluid">
+          <img src="{{asset('img/Albert-removebg-preview.png')}}"class="img-fluid">
           </div>
           <div class="details">
             <h4 class="text-center">Albert Aritonang </h4>
@@ -573,7 +574,7 @@
       <div class="col-sm-6 col-lg-4">
         <div class="box-bg">
           <div class="client-img">
-            <img src="team/Yosevyn-removebg-preview.png" class="img-fluid">
+          <img src="{{asset('img/Yosevyn-removebg-preview.png')}}"class="img-fluid">
           </div>
           <div class="details">
             <h4 class="text-center">Yosevyn Sipahutar</h4>
@@ -597,7 +598,7 @@
       <div class="col-sm-6 col-lg-4">
         <div class="box-bg">
           <div class="client-img">
-            <img src="team/Fransiska-removebg-preview.png" class="img-fluid">
+          <img src="{{asset('img/Fransiska-removebg-preview.png')}}"class="img-fluid">
           </div>
           <div class="details">
             <h4 class="text-center">Fransiska Simanungkalit</h4>
@@ -621,7 +622,7 @@
       <div class="col-sm-6 col-lg-4">
         <div class="box-bg">
           <div class="client-img">
-            <img src="team/Yoseplin-removebg-preview.png" class="img-fluid">
+          <img src="{{asset('img/Yoseplin-removebg-preview.png')}}"class="img-fluid">
           </div>
           <div class="details">
             <h4 class="text-center">Yoseplin Hutauruk </h4>
