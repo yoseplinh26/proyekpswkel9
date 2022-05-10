@@ -27,15 +27,111 @@
     {{-- nav-login --}}
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> --}}
     <script src="{{  asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js') }} " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+      .navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 8px 0 8px 20px;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #2c4964;
+  white-space: nowrap;
+  transition: 0.3s;
+  border-bottom: 2px solid #fff;
+  padding: 5px 2px;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #1977cc;
+  border-color: #1977cc;
+}
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  color: #082744;
+  border: none;
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #1977cc;
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+</style>
 </head>
 
 <body>
     <!-- Topbar Start -->
+<!--     
     <div class="container-fluid">
         <div class="row align-items-center py-3 px-xl-5">
             <div class="col-lg-3 d-none d-lg-block">
-                <img src="{{asset('img/logo.jpeg')}}">
-            </div>
+                <img src="{{asset('img/7.png')}}">
+            </div> -->
     <!-- Topbar End -->
 
 
@@ -43,13 +139,8 @@
     <div class="container-fluid mb-5">
         <div class="row border-top px-xl-5">
             <div class="col-lg-3 d-none d-lg-block">
-                
-                   
-                  
-                </a>
-               
+                 <img src="{{asset('img/7.png')}}">
             </div>
-            
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                     <a href="" class="text-decoration-none d-block d-lg-none">
@@ -60,13 +151,13 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                        <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
-                            <a href="{{ route('events') }}" class="nav-item nav-link">Events</a>
-                            <a href="{{ route('tiket') }}" class="nav-item nav-link">Ticket</a>
-                            <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
-                        </div>
-                        <div class="navbar-nav ml-auto py-0">
-                            <ul class="navbar-nav ms-auto">
+                            </div>
+                            <div class="navbar-nav ml-auto py-0">
+                                <ul class="navbar-nav ms-auto">
+                                <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
+                                <a href="{{ route('events') }}" class="nav-item nav-link active">Events</a>
+                                <a href="{{ route('tiket') }}" class="nav-item nav-link">Ticket</a>
+                                <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
 
                                 @auth
                                 <li class="nav-item dropdown">
@@ -83,8 +174,6 @@
                                   </ul>
                                 </li>
                                 @else
-                    
-                                
                                 <li class="nav-item">
                                   <a class="nav-link" href="{{ url('/login') }}">Login</a>
                                 </li>
@@ -93,10 +182,9 @@
                         </div>
                     </div>
                 </nav>
-
-                </div>
-  </header><!-- End Header -->
-
+                <br>
+                <br>
+                <!-- ======= Hero Section ======= -->
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
@@ -112,7 +200,7 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
-            <img src="{{asset('img/depsenbud.png')}}" width="110px" height="90px">
+            <img src="{{asset('img/depsenbud.jpg')}}" width="110px" height="90px">
               <h5>Departemen Seni dan Budaya</h5>
             </div>
           </div>
@@ -125,7 +213,6 @@
       <div class="container">
 
         <div class="section-title">
-        <img src="{{asset('img/logo.jpeg')}}">
           <h3>Apa yah<br>Tujuan diadakannya event BEM?</h3>
           <p>Tujuan dari diadakannya event BEM ini yaitu untuk menjalin hubungan sesama mahasiswa di 
             kampus IT DEL. Dengan landasan yang selalu diterpkan yaitu <bold>MarTuhan, marRoha, dan marBisuk</bold> menjadikan penting nya bagi mahasiswa
@@ -168,7 +255,7 @@
                       </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="{{asset('img/music.png')}}" alt="" class="img-fluid">
+                    <img src="{{asset('img/MUSIC CORNER.jpeg')}}" alt="" class="img-fluid">
                     
                   </div>
                 </div>
@@ -183,7 +270,7 @@
                     <p>Pada event ini juga ada games yang menarik juga untuk  diselenggarakan. Game ini dilaksanakan untuk menjaga dan mempererat kekompakan mahasiswa untuk meraih kemenangan. </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="{{asset('img/kopi sore.png')}}" alt="" class="img-fluid">
+                  <img src="{{asset('img/kopi sore.jpeg')}}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -197,7 +284,7 @@
                     <p>Selain untuk memelihara budaya batak saja event ini juga memelihara budaya budaya lain yang ada di Indonesia, mahasiswa juga dapat mengembangkan bakat yang dimiliki juga.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="{{asset('img/fesbud.png')}}" alt="" class="img-fluid">
+                  <img src="{{asset('img/fesbud.jpeg')}}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -211,7 +298,7 @@
                     <p> Banyak juga acara acara yang baru tentunya yang akan diakan oleh BEM yang dapat diikuti oleh setiap mahasiswa.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="{{asset('img/pentas.png')}}" alt="" class="img-fluid">
+                  <img src="{{asset('img/pentas.jpeg')}}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
