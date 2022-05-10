@@ -219,7 +219,8 @@
             dikampus dan diasrama untuk menjalin hubungan yang erat dan tali persahabatan yang kuat dengan pertemanan yang
             kuat akan menjadikan relasi yang baik pula kedepannya. Dan juga event ini tidak hanya menguatkan pertemanan.</p>
             <p>Event ini juga meningkatkan bakat seseorang untuk menampilkannya didepan umum dan dapat mengembangkan setiap bakat yng dimiliki oleh masing-masing mahasiswa</p>
-        <br>  <h4>Penjelasan Mengenai Event BEM</h4>
+        <br> 
+         <h4>Penjelasan Mengenai Event BEM</h4>
         </div>
 
         <div class="row gy-4">

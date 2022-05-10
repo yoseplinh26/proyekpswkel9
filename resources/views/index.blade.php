@@ -210,65 +210,11 @@
                Event yang diselenggarakan oleh BEM merupakan event yang menarik untuk menjalin hubungan sesama mahasiswa di IT DEL
               </p>
               <div class="text-center">
-               <!-- <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a> -->
               </div>
             </div>
           </div>
         </section>
         </main>
-
-
-   
-    <div class="container-fluid pt-5">
-        <div class="row px-xl-1 pb-3">
-            <div class="col-lg-2 col-md-6 col-sm-6 pb-1">
-                <div class="d-flex align-items-center" style="padding: 30px;">
-              <img src="{{asset('img/masker.png')}}">
-                    <h5 class="font-weight-semi-bold m-0">Gunakan Masker</h5>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="d-flex align-items-center" style="padding: 30px;">
-                <img src="{{asset('img/jarak.png')}}">
-                    <h5 class="font-weight-semi-bold m-0">Menjaga Jarak</h5>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 pb-1">
-                <div class="d-flex align-items-center" style="padding: 30px;">
-                <img src="{{asset('img/hand.png')}}">
-                    <h5 class="font-weight-semi-bold m-0">Membawa Handsanitizer</h5>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 pb-1">
-                <div class="d-flex align-items-center" style="padding: 30px;">
-                <img src="{{asset('img/cek suhu.png')}}">
-                    <h5 class="font-weight-semi-bold m-0">Melakukan Cek Suhu</h5>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                <div class="d-flex align-items-center" style="padding: 30px;">
-                <img src="{{asset('img/batuk.png')}}">
-                    <h5 class="font-weight-semi-bold m-0">Menutup hidung jika batuk dan bersin</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     <!-- Featured End -->
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -301,6 +247,40 @@
                             <span class="carousel-control-next-icon mb-n2"></span>
                         </div>
                     </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-1 pb-3">
+            <div class="col-lg-2 col-md-6 col-sm-6 pb-1">
+                <div class="d-flex align-items-center" style="padding: 30px;">
+              <img src="{{asset('img/masker.png')}}">
+                    <h5 class="font-weight-semi-bold m-0">Gunakan Masker</h5>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="d-flex align-items-center" style="padding: 30px;">
+                <img src="{{asset('img/jarak.png')}}">
+                    <h5 class="font-weight-semi-bold m-0">Menjaga Jarak</h5>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 pb-1">
+                <div class="d-flex align-items-center" style="padding: 30px;">
+                <img src="{{asset('img/hand.png')}}">
+                    <h5 class="font-weight-semi-bold m-0">Membawa Handsanitizer</h5>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 pb-1">
+                <div class="d-flex align-items-center" style="padding: 30px;">
+                <img src="{{asset('img/cek suhu.png')}}">
+                    <h5 class="font-weight-semi-bold m-0">Melakukan Cek Suhu</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                <div class="d-flex align-items-center" style="padding: 30px;">
+                <img src="{{asset('img/batuk.png')}}">
+                    <h5 class="font-weight-semi-bold m-0">Menutup hidung jika batuk dan bersin</h5>
                 </div>
             </div>
         </div>

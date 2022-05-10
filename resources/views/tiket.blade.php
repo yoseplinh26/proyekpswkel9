@@ -13,6 +13,7 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
     <!-- Font Awesome -->
@@ -28,7 +29,7 @@
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> --}}
     <script src="{{  asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js') }} " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
-      .navbar {
+.navbar {
   padding: 0;
 }
 .navbar ul {
@@ -145,6 +146,13 @@
     left: -100%;
   }
 }
+#content img {
+  float: left;
+  margin: 35px;
+}
+.deskripsi ol{
+  font-size: 30px;
+}
 </style>
 </head>
 
@@ -176,6 +184,7 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             </div>
+                            
                             <div class="navbar-nav ml-auto py-0">
                                 <ul class="navbar-nav ms-auto">
                                 <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
@@ -206,36 +215,112 @@
                         </div>
                     </div>
                 </nav>
+                 <br>
+                <br>
+                <br>
+                 <br>
                 <!-- ======= Hero Section ======= -->
 
 <!-- Content ============================================= -->
-<section id="content">
+<!-- Portfolio Items============================================= -->
+<div id="portfolio" class="portfolio grid-container clearfix">
+                                <article class="portfolio-item pf-media pf-buah-buahan" id="productList">
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="feature-box media-box">
+                            <div class="fbox-media">
+                                <div class="portfolio-image">
+                                     <img src="https://suplaitani.rickaru.com/images/products/Screenshot 2021-09-16 151629.png" style="width:100%;height:250px;transition: 100ms;position: relative;border: 2px solid;" class="card-img-top img-thumbnail">                              
+                                <div class="portfolio-overlay">
+                                    <a href="https://suplaitani.rickaru.com/show/5" class="center-icon"><i class="icon-line-expand"></i></a><br>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="fbox-desc">
+                                <h3><a href="https://suplaitani.rickaru.com/show/5">apel</a><br><b> Rp 1,000.00/Kilogram </b></h3><br>
+                                <form action="https://suplaitani.rickaru.com/cart/5/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">                                    <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
+                                    <button class="btn btn-success float-right">+ Keranjang</button>
+                                </form>		
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                </article>
+                                <article class="portfolio-item pf-media pf-buah-buahan" id="productList">
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="feature-box media-box">
+                            <div class="fbox-media">
+                                <div class="portfolio-image">
+                                     <img src="https://suplaitani.rickaru.com/images/products/Melon.jpg" style="width:100%;height:250px;transition: 100ms;position: relative;border: 2px solid;" class="card-img-top img-thumbnail">                              
+                                <div class="portfolio-overlay">
+                                    <a href="https://suplaitani.rickaru.com/show/4" class="center-icon"><i class="icon-line-expand"></i></a><br>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="fbox-desc">
+                                <h3><a href="https://suplaitani.rickaru.com/show/4">melon</a><br><b> Rp 10,000.00/Kilogram </b></h3><br>
+                                <form action="https://suplaitani.rickaru.com/cart/4/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">                                    <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
+                                    <button class="btn btn-success float-right">+ Keranjang</button>
+                                </form>		
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                </article>
+                                <article class="portfolio-item pf-media pf-sayur-sayuran" id="productList">
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="feature-box media-box">
+                            <div class="fbox-media">
+                                <div class="portfolio-image">
+                                     <img src="https://suplaitani.rickaru.com/images/products/60956cf099781.jpg" style="width:100%;height:250px;transition: 100ms;position: relative;border: 2px solid;" class="card-img-top img-thumbnail">                              
+                                <div class="portfolio-overlay">
+                                    <a href="https://suplaitani.rickaru.com/show/2" class="center-icon"><i class="icon-line-expand"></i></a><br>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="fbox-desc">
+                                <h3><a href="https://suplaitani.rickaru.com/show/2">Tomat</a><br><b> Rp 10,000.00/Kilogram </b></h3><br>
+                                <form action="https://suplaitani.rickaru.com/cart/2/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">                                    <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
+                                    <button class="btn btn-success float-right">+ Keranjang</button>
+                                </form>		
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                </article>
+                                <article class="portfolio-item pf-media pf-sayur-sayuran" id="productList">
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="feature-box media-box">
+                            <div class="fbox-media">
+                                <div class="portfolio-image">
+                                     <img src="https://suplaitani.rickaru.com/images/products/60956c181491a.jpg" style="width:100%;height:250px;transition: 100ms;position: relative;border: 2px solid;" class="card-img-top img-thumbnail">                              
+                                <div class="portfolio-overlay">
+                                    <a href="https://suplaitani.rickaru.com/show/1" class="center-icon"><i class="icon-line-expand"></i></a><br>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="fbox-desc">
+                                <h3><a href="https://suplaitani.rickaru.com/show/1">Sawi</a><br><b> Rp 50,000.00/Kilogram </b></h3><br>
+                                <form action="https://suplaitani.rickaru.com/cart/1/pesanan" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                                    <input type="hidden" name="_token" value="gKBeKtfSK5iFYxJnaL2JwTlgBVokhwUeHhSO7D9c">                                    <input type="hidden" class="float-left" id="qty" name="qty" value="1" placeholder="Total barang" required>
+                                    <button class="btn btn-success float-right">+ Keranjang</button>
+                                </form>		
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                </article>
+                            </div><!-- #portfolio end -->
+            <div class="clear bottommargin-sm"></div>
 
-	<div class="content-wrap">
-
-		<div class="container clearfix">
+            <div class="clear"></div>
             
-		<div class="col_two_third portfolio-single-image nobottommargin">   
-<img src="{{asset('img/kopi sore.jpeg')}}">
-		</div>
-
-		<div class="col_one_third portfolio-single-content col_last nobottommargin">
-
-
-            <div class="fancy-title title-bottom-border">
-                <h2>Kopi Sore</h2>
-            </div>
-
-        <ul class="portfolio-meta bottommargin">
-            <li><span><i class="icon-user"></i>Tema:</span> LLALLALALALLALALALA</li>
-            <li><span><i class="icon-calendar3"></i>Lokasi</span> Kafetaria</li>
-            <li><span><i class="icon-lightbulb"></i>Tanggal Pelaksanaa:</span> 29 Mei 2022</li>
-            <li><span><i class="icon-link"></i>Jumlah Kuota:</span>150 orang</li>
-            <li><span><i class="icon-link"></i>Jumlah Pemesanan:</span></li>
-            <li><span><i class="icon-link"></i>Deskripsi:</span>Event ini diselenggarakan oleh BEM untuk mempererat hubungan antar mahasiswa</li>
-        </ul>
         </div>
-            </div>
-</div>
-</section>
 
+    </div>
