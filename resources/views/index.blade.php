@@ -192,14 +192,13 @@
             <h2>Come and Join Us</h2>
         <img src="{{asset('img/5.png')}}" width="1550px" height="850px" float="center">
         <img src="{{asset('img/8.png')}}" width="550px" height="550px">
-     
-      <h3>Apa ajasih event yang ada di BEM?</h3>
-              <p>
-               Event yang diselenggarakan oleh BEM merupakan event yang menarik untuk menjalin hubungan sesama mahasiswa di IT DEL
-              </p>
                </div>
     </div>
             </div>
+            <h3>Apa ajasih event yang ada di BEM?</h3>
+              <p>
+               Event yang diselenggarakan oleh BEM merupakan event yang menarik untuk menjalin hubungan sesama mahasiswa di IT DEL
+              </p>
           </div>
         </section>
         </main>
