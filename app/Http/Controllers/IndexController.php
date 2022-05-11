@@ -36,11 +36,36 @@ class IndexController extends Controller
         ]);
     }
 
-    public function muscor()
+    public function eventsadmin()
     {
-        return view('muscor', [
-            'title' => 'Muscor',
+        return view('eventsadmin', [
+            'title' => 'Events Admin',
             // 'active' => 'index'
         ]);
     }
+
+    public function tiketadmin()
+    {
+        return view('tiketadmin', [
+            'title' => 'Tiket Admin',
+            // 'active' => 'index'
+        ]);
+    }
+
+    public function podcast()
+    {
+        return view('podcast', [
+            'title' => 'Podcast',
+            // 'active' => 'index'
+        ]);
+    }
+
+    public function notifkopi()
+    {
+        return view('notifkopi', [
+            'title' => 'Notif Kopi',
+            // 'active' => 'index'
+        ]);
+    }
+
 }

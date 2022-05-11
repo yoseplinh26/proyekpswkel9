@@ -153,115 +153,6 @@
 .deskripsi ol{
   font-size: 30px;
 }
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-* { box-sizing: border-box; }
-
-body { 
-  font-family: 'Open Sans', sans-serif;
-  color: #666;
-}
-
-/* STRUCTURE */
-
-.wrapper {
-	padding: 5px;
-	max-width: 960px;
-	width: 95%;
-	margin: 20px auto;
-}
-header {
-	padding: 0 15px;
-}
-
-.columns {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 5px 0;
-}
-.kolom {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 5px 0;
-    
-}
-
-.column {
-	flex: 1;
-	
-	margin: 2px;
-	padding: 10px;
-	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; }
-	
-}
-.box {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 5px 0;
-}
-
-.box {
-	flex: 1;
-
-	margin: 2px;
-	padding: 10px;
-	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; }
-	
-}
-
-@media screen and (max-width: 980px) {
-  .kolom .box {
-		margin-bottom: 5px;
-    flex-basis: 40%;
-		&:nth-last-child(2) {
-			margin-right: 0;
-		}
-		&:last-child {
-			flex-basis: 100%;
-			margin: 0;
-		}
-	}
-}
-
-@media screen and (max-width: 680px) {
-	.kolom .box {
-		flex-basis: 100%;
-		margin: 0 0 5px 0;
-	}
-}
-
-@media screen and (max-width: 980px) {
-  .columns .column {
-		margin-bottom: 5px;
-    flex-basis: 40%;
-		&:nth-last-child(2) {
-			margin-right: 0;
-		}
-		&:last-child {
-			flex-basis: 100%;
-			margin: 0;
-		}
-	}
-}
-
-@media screen and (max-width: 680px) {
-	.columns .column {
-		flex-basis: 100%;
-		margin: 0 0 5px 0;
-	}
-}
-.column button{
-    background: #1297BD;
-    border: 3px solid gray;
-}
-h3{
-    font-family: Monotype Corsiva;
-}
 </style>
 </head>
 
@@ -279,35 +170,28 @@ h3{
     <!-- Navbar Start -->
     <div class="container-fluid mb-5">
         <div class="row border-top px-xl-5">
-
             <div class="col-lg-3 d-none d-lg-block">
-            
-            <img src="{{asset('img/7.png')}}">
+                 <img src="{{asset('img/7.png')}}">
             </div>
-            
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                     <a href="" class="text-decoration-none d-block d-lg-none">
                         <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">Events BEM</span></h1>
                     </a>
-                    
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                    
-                        </div>
-                        <div class="navbar-nav ml-auto py-5">
-                            <ul class="navbar-nav ms-auto">
+                            </div>
                             
-                        <div class="navbar-nav mr-auto py-0">
-                            <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
-                            <a href="{{ route('events') }}" class="nav-item nav-link">Events</a>
-                            <a href="{{ route('tiket') }}" class="nav-item nav-link active">Ticket</a>
-                            <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
-                        </div>
+                            <div class="navbar-nav ml-auto py-0">
+                                <ul class="navbar-nav ms-auto">
+                                <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
+                                <a href="{{ route('events') }}" class="nav-item nav-link">Events</a>
+                                <a href="{{ route('') }}" class="nav-item nav-link active">Ticket</a>
+                                <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
+
                                 @auth
                                 <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -329,54 +213,32 @@ h3{
                                 @endauth
                               </ul>                      
                         </div>
-                    </nav>
                     </div>
-                    </div>            
-  <br>
+                </nav>
+                 <br>
+                <br>
+                <br>
+                 <br>
                 <!-- ======= Hero Section ======= -->
+               <!-- Content ============================================= -->
+<section id="content">
 
-<!-- Content ============================================= -->
-<!-- Portfolio Items============================================= -->
-<section class="columns">
-	<div class="column">
-    <img src="{{asset('img/MUSIC CORNER.jpeg')}}" width="300px" height="350px">
-    
-		<h3>Music Corner</h3>
-              <center><button>Pesan Tiket
-              </a></button></center>		
-		</div>
-	
-	<div class="column">
-    <img src="{{asset('img/KOPI SORE.png')}}" width="300px" height="350px">
-		<h3>Kopi Sore</h3>
-        <center> <button>
-        <a href="{{ route('notifkopi') }}">Pesan Tiket</a>
-      </button>	</center>
-		</div>
-  
-  <div class="column">
-  <img src="{{asset('img/fesbud.jpeg')}}" width="300px" height="350px">
-		<h3>Festival Budaya</h3>
-        <center><button>Pesan Tiket</button></center>
-    </div>
-</section>
-
-<br />
-<div class="wrapper">
-<section class="kolom" >
-<div class="column">
-    <img src="{{asset('img/pentas.jpeg')}}" width="300px" height="350px">
-		<h3>Pentas Budaya</h3>
-
-              <center><button>Pesan Tiket</button></center>		
-		</div>
-    <div class="column">
-    <img src="{{asset('img/podcast.png')}}" width="300px" height="350px">
-		<h3>Podcast</h3>
- <center><button>Pesan Tiket</button></center>		
-		</div>
- 
-	
-
-
+<div>
+        <img src="{{asset('img/podcast.png')}}" width="520px" height="670px">
 </div>
+<br>
+<div class="deskripsi">
+            <h2><b>Podcast</b></h2>
+            <hr>
+    <ul class="portfolio-meta bottommargin">
+        <ol><span><i class="icon-user"></i>Tema:</span> Menjalin keutuhan sesama mahasiswa IT Del</ol>
+        <ol><span><i class="icon-calendar3"></i>Lokasi</span> Kafetaria</ol>
+        <ol><span><i class="icon-lightbulb"></i>Tanggal Pelaksanaa:</span> 29 Mei 2022</ol>
+        <ol><span><i class="icon-link"></i>Jumlah Kuota:</span>150 orang</ol>
+        <ol><span><i class="icon-link"></i>Jumlah Pemesanan:</span></ol>
+        <ol><span><i class="icon-link"></i>Deskripsi:</span>Event ini diselenggarakan oleh BEM untuk mempererat hubungan antar mahasiswa</ol>
+    </ul>
+    </div>
+        </div>
+</div>
+</section> 

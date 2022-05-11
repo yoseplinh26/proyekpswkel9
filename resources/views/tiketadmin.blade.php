@@ -1,3 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Events BEM Online Ticketing {{ $title }}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{  asset('css/carousel.css') }}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{  asset('css/index.css') }}" rel="stylesheet">
+</style>
+
+</head>
+
+<body>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -333,50 +365,51 @@ h3{
                     </div>
                     </div>            
   <br>
-                <!-- ======= Hero Section ======= -->
 
-<!-- Content ============================================= -->
-<!-- Portfolio Items============================================= -->
-<section class="columns">
-	<div class="column">
-    <img src="{{asset('img/MUSIC CORNER.jpeg')}}" width="300px" height="350px">
-    
-		<h3>Music Corner</h3>
-              <center><button>Pesan Tiket
-              </a></button></center>		
-		</div>
-	
-	<div class="column">
-    <img src="{{asset('img/KOPI SORE.png')}}" width="300px" height="350px">
-		<h3>Kopi Sore</h3>
-        <center> <button>
-        <a href="{{ route('notifkopi') }}">Pesan Tiket</a>
-      </button>	</center>
-		</div>
-  
-  <div class="column">
-  <img src="{{asset('img/fesbud.jpeg')}}" width="300px" height="350px">
-		<h3>Festival Budaya</h3>
-        <center><button>Pesan Tiket</button></center>
-    </div>
-</section>
-
-<br />
-<div class="wrapper">
-<section class="kolom" >
-<div class="column">
-    <img src="{{asset('img/pentas.jpeg')}}" width="300px" height="350px">
-		<h3>Pentas Budaya</h3>
-
-              <center><button>Pesan Tiket</button></center>		
-		</div>
-    <div class="column">
-    <img src="{{asset('img/podcast.png')}}" width="300px" height="350px">
-		<h3>Podcast</h3>
- <center><button>Pesan Tiket</button></center>		
-		</div>
- 
-	
-
-
-</div>
+<div class="tabel1" id="section-2">
+        <div class="container">
+          <div class="card mb-4">
+            <div class="card-header">
+              Daftar Pemesanan Tiket
+              <center><button><a href="">Save</a></button></center>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Nama Event</th>
+                      <th>No Kursi</th>
+                      <th>Jumlah</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+          
+                    <tr>
+                      <td>Kopi Sore</td>
+                      <td>005,006</td>
+                      <td>5 Tiket</td>
+                      <td> 
+                   <button type="submit" name="edit" class="btn btn-primary ">Edit</button>
+                   <button type="submit" name="edit" class="btn btn-primary ">Verifikasi</button>
+                      <button type="submit" name="hapus" class="btn btn-primary ">Hapus</button>
+                      
+                  
+                </td>
+                    </tr>
+                    <tr>
+                      <td>Music Corner</td>
+                      <td>005,006</td>
+                      <td>5 Tiket</td>
+                      <td> 
+                      <button type="submit" name="edit" class="btn btn-primary ">Edit</button>
+                      <button type="submit" name="edit" class="btn btn-primary ">Verifikasi</button>
+                      <button type="submit" name="hapus" class="btn btn-primary ">Hapus</button>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

@@ -153,6 +153,118 @@
 .deskripsi ol{
   font-size: 30px;
 }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* { box-sizing: border-box; }
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+/* STRUCTURE */
+
+.wrapper {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 20px auto;
+}
+header {
+	padding: 0 15px;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+.kolom {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+    
+}
+
+.column {
+	flex: 1;
+	
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
+}
+.box {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.box {
+	flex: 1;
+
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
+}
+
+@media screen and (max-width: 980px) {
+  .kolom .box {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.kolom .box {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+.column button{
+    background: #1297BD;
+    border: 3px solid gray;
+}
+h3{
+    font-family: Monotype Corsiva;
+}
+.card header button{
+    float: right;
+}
 </style>
 </head>
 
@@ -170,28 +282,35 @@
     <!-- Navbar Start -->
     <div class="container-fluid mb-5">
         <div class="row border-top px-xl-5">
+
             <div class="col-lg-3 d-none d-lg-block">
-                 <img src="{{asset('img/7.png')}}">
+            
+            <img src="{{asset('img/7.png')}}">
             </div>
+            
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                     <a href="" class="text-decoration-none d-block d-lg-none">
                         <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">Events BEM</span></h1>
                     </a>
+                    
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            </div>
+                    
+                        </div>
+                        <div class="navbar-nav ml-auto py-5">
+                            <ul class="navbar-nav ms-auto">
                             
-                            <div class="navbar-nav ml-auto py-0">
-                                <ul class="navbar-nav ms-auto">
-                                <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
-                                <a href="{{ route('events') }}" class="nav-item nav-link">Events</a>
-                                <a href="{{ route('') }}" class="nav-item nav-link active">Ticket</a>
-                                <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
-
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
+                            <a href="{{ route('events') }}" class="nav-item nav-link">Events</a>
+                            <a href="{{ route('tiket') }}" class="nav-item nav-link active">Ticket</a>
+                            <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
+                        </div>
                                 @auth
                                 <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -213,32 +332,61 @@
                                 @endauth
                               </ul>                      
                         </div>
+                    </nav>
                     </div>
-                </nav>
-                 <br>
-                <br>
-                <br>
-                 <br>
-                <!-- ======= Hero Section ======= -->
-               <!-- Content ============================================= -->
-<section id="content">
+                    </div>            
+  <br>
 
-<div>
-        <img src="{{asset('img/podcast.jpeg')}}" width="520px" height="670px">
-</div>
-<br>
-<div class="deskripsi">
-            <h2><b>Podcast</b></h2>
-            <hr>
-    <ul class="portfolio-meta bottommargin">
-        <ol><span><i class="icon-user"></i>Tema:</span> Menjalin keutuhan sesama mahasiswa IT Del</ol>
-        <ol><span><i class="icon-calendar3"></i>Lokasi</span> Kafetaria</ol>
-        <ol><span><i class="icon-lightbulb"></i>Tanggal Pelaksanaa:</span> 29 Mei 2022</ol>
-        <ol><span><i class="icon-link"></i>Jumlah Kuota:</span>150 orang</ol>
-        <ol><span><i class="icon-link"></i>Jumlah Pemesanan:</span></ol>
-        <ol><span><i class="icon-link"></i>Deskripsi:</span>Event ini diselenggarakan oleh BEM untuk mempererat hubungan antar mahasiswa</ol>
-    </ul>
-    </div>
+<div class="tabel1" id="section-2">
+        <div class="container">
+          <div class="card mb-4">
+            <div class="card-header">
+              Daftar Informasi Pelaksanaan Event
+          <center>  <button><a href=""> + </a></button></center">
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Nama Event</th>
+                      <th>Tema Event</th>
+                      <th>Lokasi</th>
+                      <th>Jumlah Kuota</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+          
+                    <tr>
+                      <td>Kopi Sore</td>
+                      <td>Kekerabatan yang penuh makna</td>
+                      <td>Kafetaria</td>
+                      <td> 150 orang </td>
+                      <td> 
+                      <button type="submit" name="edit" class="btn btn-primary ">Edit</button>
+                      <button type="submit" name="hapus" class="btn btn-primary ">Hapus</button>
+                      
+                </td>
+                    </tr>
+                    <tr>
+                      <td>Festival Budaya</td>
+                      <td>Semakin menghargai perbedaan suku dan budaya</td>
+                      <td>Auditorium</td>
+                      <td> 300 orang </td>
+                      <td> 
+                      <button type="submit" name="edit" class="btn btn-primary ">Edit</button>
+                      <button type="submit" name="hapus" class="btn btn-primary ">Hapus</button>
+                      
+                </td>
+                    </tr>
+                
+                  </tbody>
+                </table>
+                
+
+              </div>
+            </div>
+          </div>
         </div>
-</div>
-</section> 
+      </div>

@@ -66,6 +66,9 @@ Route::get('/forgot',[RegistrasiController::class,'forgot'])->name('forgot');
 
 Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/tiket',[IndexController::class,'ticket'])->name('tiket');
+Route::get('/tiketadmin',[IndexController::class,'tiketadmin'])->name('tiketadmin');
+Route::get('/notifkopi',[IndexController::class,'notifkopi'])->name('notifkopi');
 Route::get('/events',[IndexController::class,'events'])->name('events');
+Route::get('/eventsadmin',[IndexController::class,'eventsadmin'])->name('eventsadmin');
 Route::get('/team',[IndexController::class,'team'])->name('team');
-Route::get('/muscor',[IndexController::class,'muscor'])->name('muscor');
+Route::get('/podcast',[IndexController::class,'podcast'])->name('podcast');
