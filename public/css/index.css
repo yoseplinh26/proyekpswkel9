@@ -1472,7 +1472,9 @@ pre code {
         margin-left: 91.66667%;
     }
 }
-
+.jumbotron img{
+    float: flex;
+}
 @media (min-width: 1200px) {
     .col-xl {
         flex-basis: 0;

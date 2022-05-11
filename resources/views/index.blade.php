@@ -28,6 +28,11 @@
     
     {{-- nav-login --}}
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
     <script src="{{  asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js') }} " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
   .navbar {
@@ -122,8 +127,25 @@
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
+}
+
+.container {
+  /* background:#3297BB; */
+  width: 1500px;
   
 }
+.container p{
+font-family: Monotype Corsiva;
+color: #fff;
+font-size: 25px;
+}
+.jumbotron{
+  width: 1200px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 </style>
 </head>
 
@@ -186,25 +208,17 @@
 </nav>
                     </div>
 </div>            
-  <br>
-  <div class="jumbotron">
-  <h1>Welcome to Website <br> Event BEM Online Ticketing</h1> 
-            <h2>Come and Join Us</h2>
-        <img src="{{asset('img/5.png')}}" width="1550px" height="850px" float="center">
-        <img src="{{asset('img/8.png')}}" width="550px" height="550px">
-               </div>
+<div class="container py-5">
+      <div class="jumbotron text-white" style="background-image: url({{asset('img/desain.jpeg')}});">
+        <h2 class="mb-4">
+          Welcome To Website <br>Event BEM ONLINE TICKETING
+        </h2>
+        <p class="mb-4">
+          Come and Join Us
+        </p>
+        
+      </div>
     </div>
-            </div>
-            <h3>Apa ajasih event yang ada di BEM?</h3>
-              <p>
-               Event yang diselenggarakan oleh BEM merupakan event yang menarik untuk menjalin hubungan sesama mahasiswa di IT DEL
-              </p>
-          </div>
-        </section>
-        </main>
-  
-    <!-- Featured End -->
-    
     <div class="container-fluid pt-5">
         <div class="row px-xl-1 pb-3">
             <div class="col-lg-2 col-md-6 col-sm-6 pb-1">
@@ -239,3 +253,5 @@
             </div>
         </div>
     </div>
+    
+</body> 
