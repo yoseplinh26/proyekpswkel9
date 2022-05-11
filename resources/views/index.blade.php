@@ -138,9 +138,10 @@
 font-family: Monotype Corsiva;
 color: #fff;
 font-size: 25px;
+
 }
 .jumbotron{
-  width: 1200px;
+  width: 1300px;
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,7 +210,7 @@ font-size: 25px;
                     </div>
 </div>            
 <div class="container py-5">
-      <div class="jumbotron text-white" style="background-image: url({{asset('img/desain.jpeg')}});">
+      <div class="jumbotron text-white" style="background-image: url({{asset('img/desain.jpeg')}});>
         <h2 class="mb-4">
           Welcome To Website <br>Event BEM ONLINE TICKETING
         </h2>
