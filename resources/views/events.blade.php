@@ -125,40 +125,37 @@
 </head>
 
 <body>
-    <!-- Topbar Start -->
-<!--     
-    <div class="container-fluid">
-        <div class="row align-items-center py-3 px-xl-5">
-            <div class="col-lg-3 d-none d-lg-block">
-                <img src="{{asset('img/7.png')}}">
-            </div> -->
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <div class="container-fluid mb-5">
+<div class="container-fluid mb-5">
         <div class="row border-top px-xl-5">
+
             <div class="col-lg-3 d-none d-lg-block">
-                 <img src="{{asset('img/7.png')}}">
+            
+            <img src="{{asset('img/7.png')}}">
             </div>
+            
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                     <a href="" class="text-decoration-none d-block d-lg-none">
                         <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">Events BEM</span></h1>
                     </a>
+                    
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            </div>
-                            <div class="navbar-nav ml-auto py-0">
-                                <ul class="navbar-nav ms-auto">
-                                <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
-                                <a href="{{ route('events') }}" class="nav-item nav-link active">Events</a>
-                                <a href="{{ route('tiket') }}" class="nav-item nav-link">Ticket</a>
-                                <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
-
+                    
+                        </div>
+                        <div class="navbar-nav ml-auto py-5">
+                            <ul class="navbar-nav ms-auto">
+                            
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
+                            <a href="{{ route('events') }}" class="nav-item nav-link active">Events</a>
+                            <a href="{{ route('tiket') }}" class="nav-item nav-link">Ticket</a>
+                            <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
+                        </div>
                                 @auth
                                 <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -180,49 +177,56 @@
                                 @endauth
                               </ul>                      
                         </div>
+</nav>
                     </div>
-                </nav>
-                <br>
-                <br>
-                <!-- ======= Hero Section ======= -->
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container">
-      <h1>Welcome to Website<br>Event BEM Online Ticketing</h1>
-      <h2>Come and Join Us</h2>
-  </section><!-- End Hero -->
-  <main id="main">
+</div>
+    <!-- Navbar End -->
+
+
+    
 
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="content">
-            <img src="{{asset('img/depsenbud.jpg')}}" width="110px" height="90px">
-              <h5>Departemen Seni dan Budaya</h5>
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height: 1010px;">
+                        <img src="{{asset('img/9.jpg')}}" width="550px" height="550px">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 100px;">
+                                   
+                                </div>
+                            </div>
+                       
+                        <div class="carousel-item" style="height: 1010px;">
+                        <img src="{{asset('img/9.png')}}" width="550px" height="550px">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                        <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                            <span class="carousel-control-prev-icon mb-n2"></span>
+                        </div>
+                    </a>
+                    <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                        <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                            <span class="carousel-control-next-icon mb-n2"></span>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </div>
-        </section>
-        </main>
-
+        </div>
+        <br><br>
 
     <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">
       <div class="container">
-
-        <div class="section-title">
-          <h3>Apa yah<br>Tujuan diadakannya event BEM?</h3>
-          <p>Tujuan dari diadakannya event BEM ini yaitu untuk menjalin hubungan sesama mahasiswa di 
-            kampus IT DEL. Dengan landasan yang selalu diterpkan yaitu <bold>MarTuhan, marRoha, dan marBisuk</bold> menjadikan penting nya bagi mahasiswa
-            dikampus dan diasrama untuk menjalin hubungan yang erat dan tali persahabatan yang kuat dengan pertemanan yang
-            kuat akan menjadikan relasi yang baik pula kedepannya. Dan juga event ini tidak hanya menguatkan pertemanan.</p>
-            <p>Event ini juga meningkatkan bakat seseorang untuk menampilkannya didepan umum dan dapat mengembangkan setiap bakat yng dimiliki oleh masing-masing mahasiswa</p>
-        <br> 
-         <h4>Penjelasan Mengenai Event BEM</h4>
-        </div>
-
+      <div class="row">
+         
+                                    
+        <h4>Penjelasan Mengenai Event BEM</h4>
         <div class="row gy-4">
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
@@ -318,7 +322,7 @@
                        mahasiswa dimana pun baik secara offline maupun online. Video podcast ini dapat diakses melalui akun resmi depsendub it del</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="{{asset('img/podcast.jpeg')}}" alt="" class="img-fluid">
+                    <img src="{{asset('img/podcast.png')}}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -330,7 +334,6 @@
     </section><!-- End Departments Section -->
 <hr>
     <div class="container d-md-flex py-4">
-
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
           &copy; Copyright <strong><span>Berkisa Team-09</span></strong>. All Rights Reserved

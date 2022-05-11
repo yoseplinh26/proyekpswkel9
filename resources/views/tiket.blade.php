@@ -279,30 +279,35 @@ h3{
     <!-- Navbar Start -->
     <div class="container-fluid mb-5">
         <div class="row border-top px-xl-5">
+
             <div class="col-lg-3 d-none d-lg-block">
-                
+            
             <img src="{{asset('img/7.png')}}">
             </div>
+            
             <div class="col-lg-9">
-                
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                     <a href="" class="text-decoration-none d-block d-lg-none">
                         <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">Events BEM</span></h1>
                     </a>
+                    
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            </div>
+                    
+                        </div>
+                        <div class="navbar-nav ml-auto py-5">
+                            <ul class="navbar-nav ms-auto">
                             
-                            <div class="navbar-nav ml-auto py-0">
-                                <ul class="navbar-nav ms-auto">
-                                <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
-                                <a href="{{ route('events') }}" class="nav-item nav-link">Events</a>
-                                <a href="{{ route('tiket') }}" class="nav-item nav-link active">Ticket</a>
-                                <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
-
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
+                            <a href="{{ route('events') }}" class="nav-item nav-link">Events</a>
+                            <a href="{{ route('tiket') }}" class="nav-item nav-link active">Ticket</a>
+                            <a href="{{ route('team') }}" class="nav-item nav-link">Team</a>
+                        </div>
                                 @auth
                                 <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -324,18 +329,15 @@ h3{
                                 @endauth
                               </ul>                      
                         </div>
+                    </nav>
                     </div>
-                </nav>
-                 <br>
-                <br>
-                <br>
-                 <br>
+                    </div>            
+  <br>
                 <!-- ======= Hero Section ======= -->
 
 <!-- Content ============================================= -->
 <!-- Portfolio Items============================================= -->
 <section class="columns">
-	
 	<div class="column">
     <img src="{{asset('img/MUSIC CORNER.jpeg')}}" width="300px" height="350px">
 		<h3>Music Corner</h3>
@@ -366,7 +368,7 @@ h3{
               <center><button>Pesan Tiket</button></center>		
 		</div>
     <div class="column">
-    <img src="{{asset('img/pentas.jpeg')}}" width="300px" height="350px">
+    <img src="{{asset('img/podcast.png')}}" width="300px" height="350px">
 		<h3>Podcast</h3>
 
               <center><button>Pesan Tiket</button></center>		
