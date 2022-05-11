@@ -22,7 +22,8 @@
     <link href="{{  asset('css/carousel.css') }}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{  asset('css/style.css') }}" rel="stylesheet">
+    
+    <link href="{{  asset('css/index.css') }}" rel="stylesheet">
     <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
     {{-- nav-login --}}
@@ -184,58 +185,26 @@
                         </div>
 </nav>
                     </div>
-</div>
-              
-                <!-- ======= Hero Section ======= -->
-                <br>
-                <br>
-                <br>            
-
+</div>            
   <br>
   <div class="jumbotron">
   <h1>Welcome to Website <br> Event BEM Online Ticketing</h1> 
             <h2>Come and Join Us</h2>
         <img src="{{asset('img/5.png')}}" width="1550px" height="850px" float="center">
         <img src="{{asset('img/8.png')}}" width="550px" height="550px">
-      </div>
+     
+      <h3>Apa ajasih event yang ada di BEM?</h3>
+              <p>
+               Event yang diselenggarakan oleh BEM merupakan event yang menarik untuk menjalin hubungan sesama mahasiswa di IT DEL
+              </p>
+               </div>
     </div>
+            </div>
+          </div>
+        </section>
+        </main>
   
     <!-- Featured End -->
-    <div id="header-carousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" style="height: 410px;">
-                            <img class="img-fluid" src="#" alt="Image">
-                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <div class="p-3" style="max-width: 100px;">
-                                   
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="height: 410px;">
-                            <img class="img-fluid" src="#" alt="Image">
-                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <div class="p-3" style="max-width: 700px;">
-                                    {{-- <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
-                                    <h3 class="display-4 text-white font-weight-semi-bold mb-4">Reasonable Price</h3>
-                                    <a href="" class="btn btn-light py-2 px-3">Shop Now</a> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-                        <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                            <span class="carousel-control-prev-icon mb-n2"></span>
-                        </div>
-                    </a>
-                    <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                        <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                            <span class="carousel-control-next-icon mb-n2"></span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div
     
     <div class="container-fluid pt-5">
         <div class="row px-xl-1 pb-3">
