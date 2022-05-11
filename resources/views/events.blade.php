@@ -22,7 +22,7 @@
     <link href="{{  asset('css/carousel.css') }}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{  asset('css/index.css') }}" rel="stylesheet">
+    <link href="{{  asset('css/index1.css') }}" rel="stylesheet">
 
     {{-- nav-login --}}
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> --}}
@@ -178,6 +178,7 @@
                               </ul>                      
                         </div>
 </nav>
+
                     </div>
 </div>
     <!-- Navbar End -->
@@ -223,9 +224,7 @@
     <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">
       <div class="container">
-      <div class="row">
-         
-                                    
+      <div class="row">                      
         <h4>Penjelasan Mengenai Event BEM</h4>
         <div class="row gy-4">
           <div class="col-lg-3">

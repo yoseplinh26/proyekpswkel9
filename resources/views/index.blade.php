@@ -151,9 +151,7 @@ font-size: 25px;
 
 <body>
 
-    
-    <!-- Navbar Start -->
-    <div class="container-fluid mb-5">
+<div class="container-fluid mb-5">
         <div class="row border-top px-xl-5">
 
             <div class="col-lg-3 d-none d-lg-block">
@@ -207,7 +205,8 @@ font-size: 25px;
                         </div>
 </nav>
                     </div>
-</div>            
+</div>
+      
 <div class="container py-5">
       <div class="jumbotron text-white" style="background-image: url({{asset('img/desain.jpeg')}});">
         <h2 class="mb-4">

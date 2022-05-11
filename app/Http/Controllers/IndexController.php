@@ -35,4 +35,12 @@ class IndexController extends Controller
             // 'active' => 'index'
         ]);
     }
+
+    public function muscor()
+    {
+        return view('muscor', [
+            'title' => 'Muscor',
+            // 'active' => 'index'
+        ]);
+    }
 }

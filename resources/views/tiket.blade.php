@@ -340,9 +340,9 @@ h3{
 <section class="columns">
 	<div class="column">
     <img src="{{asset('img/MUSIC CORNER.jpeg')}}" width="300px" height="350px">
+    
 		<h3>Music Corner</h3>
-
-              <center><button>Pesan Tiket</button></center>		
+              <center><button> <a href="{{ route('muscor') }}" class="nav-item nav-link">Pesan Tiket</a></button></center>		
 		</div>
 	
 	<div class="column">
