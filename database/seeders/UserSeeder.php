@@ -17,18 +17,26 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        User::truncate();
-        User::create([
-            'nama_lengkap' => 'Fransiska Simanungkalit',
-            'role' => 'mahasiswa',
-            'email' => 'fransiska24@gmail.com',
-            'prodi' => 'D3TI',
-            'nim' => '11321005',
-            'jenis_kelamin' => 'perempuan',
-            'username' => 'fransiska',
-            'password' => bcrypt('admin'),
-            'konfirmasi_password' => bcrypt('admin')
+        $data = array(
+            [
+                'username' => 'admin',
+                'email' => 'admin@mail.com',
+                'no_hp' => '085267816542',
+                'alamat' => 'Jln Kampung Kubur',
+                'password' => Hash::make('password'),
+                'role' => 'admin'
 
-        ]);
+            ]
+        );
+        foreach($data AS $d){
+            User::create([
+                'username' => $d['username'],
+                'email' => $d['email'],
+                'no_hp' => $d['no_hp'],
+                'alamat' => $d['alamat'],
+                'password' => $d['password'],
+                'role' => $d['role']
+            ]);
+        }
     }
 }

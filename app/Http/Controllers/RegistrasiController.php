@@ -14,13 +14,13 @@ class RegistrasiController extends Controller
 {   
     public function index()
     {
-        return view('registrasi.registrasi', [
+        return view('auth.registrasi', [
             'title' => 'Registrasi',
         ]);
     }
     public function forgot()
     {
-        return view('registrasi.forgot', [
+        return view('auth.forgot', [
             'title' => 'Forgot Password',
         ]);
     }

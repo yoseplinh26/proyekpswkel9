@@ -9,6 +9,8 @@ use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ContacController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\BelajarController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -72,3 +74,46 @@ Route::get('/events',[IndexController::class,'events'])->name('events');
 Route::get('/eventsadmin',[IndexController::class,'eventsadmin'])->name('eventsadmin');
 Route::get('/team',[IndexController::class,'team'])->name('team');
 Route::get('/podcast',[IndexController::class,'podcast'])->name('podcast');
+
+// unutk menampilkan dan mengirim data lewat url 
+// contoh : /aktivitas?kodePemda=2&key=yerivbrebvuiberui
+Route::get('/test', [BelajarController::class, 'index']);
+//untuk menampilkan dan mengirim data lewat form-body
+Route::post('/test', [BelajarController::class, 'store']);
+
+// // untuk edit data
+// Route::put();
+
+// // untuk menghapus data
+// Route::delete();
+
+ // role untuk admin 
+            // klo misalnya dicek role == 'admin'
+            // bawa ke route->redirect('/admin/dashboard')
+            
+            //role untuk mahasiswa
+            // klo misalnya dicek role == 'mahasiswa'
+            // bawa ke route->redirect('/dashboard')
+
+            // buat 2 halaman loginn
+            // untuk user
+            // nama route : /login
+            // untuk admin
+            // nama route : /admin/login
+
+Route::prefix('admin')->group(function () {
+    
+//  Route::get('/dashboard', AdminController::index);
+// ke rount /admin/dashboard
+
+//  Route::get('/login', AdminController::login);
+// ke rount /admin/login
+
+});
+
+// bkin table baru untuk akun admin
+
+
+
+
+
